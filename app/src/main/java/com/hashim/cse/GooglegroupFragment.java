@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -21,6 +22,8 @@ public class GooglegroupFragment extends Fragment {
         View view = inflater.inflate(R.layout.googlegroup_fragment, container, false);
 
         webView = view.findViewById(R.id.webview_googlegroup);
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("http://bit.ly/2Z1vJn8");
 

@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Log.i("logh","main selected");
 
         BottomNavigationView navigation =  findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(this);
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        Log.i("logh","selected");
 
         Fragment fragment=null;
 
@@ -50,22 +48,18 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
 
             case R.id.navigation_home:
                 fragment = new HomeFragment();
-                Log.i("logh","home selected");
                 break;
 
             case R.id.navigation_googlegroup:
                 fragment = new GooglegroupFragment();
-                Log.i("logh","g.grp selected");
                 break;
 
             case R.id.navigation_erp:
                 fragment = new ErpFragment();
-                Log.i("logh","erp selected");
                 break;
 
             case R.id.navigation_ktu:
                 fragment = new KtuFragment();
-                Log.i("logh","Ktu selected");
                 break;
         }
 
