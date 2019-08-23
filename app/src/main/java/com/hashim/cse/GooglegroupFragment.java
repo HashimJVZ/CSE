@@ -18,9 +18,9 @@ public class GooglegroupFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.googlegroupfragment, container, false);
+        View view = inflater.inflate(R.layout.googlegroup_fragment, container, false);
 
-        webView = view.findViewById(R.id.fragment_googlegroup);
+        webView = view.findViewById(R.id.webview_googlegroup);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("http://bit.ly/2Z1vJn8");
 
