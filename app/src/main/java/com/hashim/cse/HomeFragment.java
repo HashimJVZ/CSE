@@ -11,16 +11,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class GooglegroupFragment extends Fragment {
+public class HomeFragment extends Fragment {
 
     private WebView webView;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.googlegroupfragment, container, false);
+        View view = inflater.inflate(R.layout.homefragment, container, false);
 
-        webView = view.findViewById(R.id.fragment_googlegroup);
+        webView = view.findViewById(R.id.fragment_home);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl("http://bit.ly/2Z1vJn8");
 

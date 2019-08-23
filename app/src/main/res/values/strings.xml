@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CSE</string>
+    <string name="title_home">Home</string>
+    <string name="title_googlegroup">Google Group</string>
+    <string name="title_erp">ERP</string>
+    <string name="title_ktu">KTU</string>
 </resources>
